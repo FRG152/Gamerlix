@@ -58,7 +58,7 @@ li {
 }
 
 button {
-  cursor: pointer;
+  cursor: none;
   border: none;
   outline: none;
   background: none;
