@@ -1,13 +1,40 @@
 <script setup>
-import CardComponent from "./CardComponent.vue";
+import gsap from "gsap";
 import Danger from "./Danger.vue";
+import CardComponent from "./CardComponent.vue";
+import { ref, onMounted } from "vue";
+
+const boxCard = ref(null);
+const image = ref(null);
+const title = ref(null);
+
+onMounted(() => {
+  gsap.from(title.value, {
+    opacity: 0.8,
+    duration: 2,
+    x: -200,
+    ease: "power2.inOut",
+  });
+  gsap.from(boxCard.value, {
+    opacity: 0,
+    duration: 4,
+    y: -100,
+    ease: "power2.inOut",
+  });
+  gsap.from(image.value, {
+    opacity: 0,
+    duration: 4,
+    y: 100,
+    ease: "power2.inOut",
+  });
+});
 </script>
 
 <template>
   <section class="container-hero">
-    <h1 class="hero-title">NEXUS</h1>
-    <img alt="hero" class="image" src="../../public/image01.png" />
-    <div class="box-card">
+    <h1 ref="title" class="hero-title">NEXSUS</h1>
+    <img ref="image" alt="hero" class="image" src="../../public/image01.png" />
+    <div ref="boxCard" class="box-card">
       <CardComponent
         title="BEST GAMES"
         desc="Inmerse in the ultimate rush! The pinnacle of futuristic racing games - the epitome of speed and thrill. Experience the best games ever!"

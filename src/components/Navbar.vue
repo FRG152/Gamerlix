@@ -1,7 +1,21 @@
-<script setup></script>
+<script setup>
+import gsap from "gsap";
+import { ref, onMounted } from "vue";
+
+const navbar = ref(null);
+
+onMounted(() => {
+  gsap.from(navbar.value, {
+    opacity: 0,
+    duration: 3,
+    y: -100,
+    ease: "power2.inOut",
+  });
+});
+</script>
 
 <template>
-  <nav class="navbar">
+  <nav ref="navbar" class="navbar">
     <ul class="nav-links">
       <div class="nav-logo">
         <h3>GAMERLIX</h3>
