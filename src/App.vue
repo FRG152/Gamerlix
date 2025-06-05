@@ -15,18 +15,6 @@ onMounted(() => {
     cursor.value.style.left = `${e.clientX}px`;
     cursor.value.style.top = `${e.clientY}px`;
   });
-
-  heading.addEventListener("mouseenter", () => {
-    cursor.value.style.width = "150px";
-    cursor.value.style.height = "150px";
-    cursor.value.style.backgroundColor = "#000";
-  });
-
-  heading.addEventListener("mouseleave", () => {
-    cursor.value.style.width = "100px";
-    cursor.value.style.height = "100px";
-    cursor.value.style.backgroundColor = "#fff";
-  });
 });
 </script>
 
@@ -80,6 +68,6 @@ onMounted(() => {
   transition: all 0.1s;
   border-radius: 50%;
   pointer-events: none;
-  background-color: var(--color-primary);
+  background-color: #000000ce;
 }
 </style>
