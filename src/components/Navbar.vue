@@ -6,6 +6,7 @@ const navbar = ref(null);
 
 onMounted(() => {
   gsap.from(navbar.value, {
+    delay: 1,
     opacity: 0,
     duration: 2,
     y: -100,

@@ -9,8 +9,6 @@ const container = ref(null);
 const cursor = ref(null);
 
 onMounted(() => {
-  const heading = document.querySelector(".hero-title");
-
   window.addEventListener("mousemove", (e) => {
     cursor.value.style.left = `${e.clientX}px`;
     cursor.value.style.top = `${e.clientY}px`;

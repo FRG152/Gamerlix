@@ -10,20 +10,22 @@ const title = ref(null);
 
 onMounted(() => {
   gsap.from(title.value, {
+    delay: 2,
     opacity: 0,
     duration: 2,
     x: -300,
     ease: "power2.inOut",
   });
   gsap.from(boxCard.value, {
+    delay: 2,
     opacity: 0,
-    duration: 4,
+    duration: 2,
     y: -100,
     ease: "power2.inOut",
   });
   gsap.from(image.value, {
     opacity: 0,
-    duration: 3,
+    duration: 2,
     y: 100,
     ease: "power2.inOut",
   });
