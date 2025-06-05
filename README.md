@@ -4,7 +4,7 @@ This project is a starter template for building with **Vue 3 + Vite**, designed 
 
 > ⚠️ **Design Disclaimer**: The design used in this project was inspired by an image found on Pinterest. It is used solely for educational and non-commercial purposes.
 
-![Design reference](./5ded255a-5ea9-4428-a4db-07c92a4b1ec9.png)
+![Design reference](![image](https://github.com/user-attachments/assets/7ec089d3-83eb-44e2-8ada-8b369d9bfcca))
 
 ---
 
