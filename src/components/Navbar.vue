@@ -46,7 +46,6 @@ onMounted(() => {
 }
 .nav-link {
   color: var(--color-primary);
-  cursor: pointer;
   transition: all 0.2s;
   font-weight: 100;
 }
