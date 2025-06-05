@@ -7,7 +7,7 @@ const navbar = ref(null);
 onMounted(() => {
   gsap.from(navbar.value, {
     opacity: 0,
-    duration: 3,
+    duration: 2,
     y: -100,
     ease: "power2.inOut",
   });

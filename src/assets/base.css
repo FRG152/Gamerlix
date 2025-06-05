@@ -48,8 +48,8 @@
 }
 
 body {
+  cursor: none;
   overflow: hidden;
-  background: var(--color-primary);
   font-family: "VeniteAdoremus", sans-serif;
 }
 

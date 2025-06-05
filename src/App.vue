@@ -1,24 +1,38 @@
 <script setup>
-import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
+import Navbar from "./components/Navbar.vue";
 import Firebrands from "./components/Firebrands.vue";
-import { leftFirebrands, rightFirebrands } from "./constants";
 import { ref, onMounted } from "vue";
-import gsap from "gsap";
+import { leftFirebrands, rightFirebrands } from "./constants";
 
 const container = ref(null);
+const cursor = ref(null);
 
 onMounted(() => {
-  gsap.from(container.value, {
-    duration: 2,
-    transform: "scale(0.8)",
-    opacity: 0,
+  const heading = document.querySelector(".hero-title");
+
+  window.addEventListener("mousemove", (e) => {
+    cursor.value.style.left = `${e.clientX}px`;
+    cursor.value.style.top = `${e.clientY}px`;
+  });
+
+  heading.addEventListener("mouseenter", () => {
+    cursor.value.style.width = "150px";
+    cursor.value.style.height = "150px";
+    cursor.value.style.backgroundColor = "#000";
+  });
+
+  heading.addEventListener("mouseleave", () => {
+    cursor.value.style.width = "100px";
+    cursor.value.style.height = "100px";
+    cursor.value.style.backgroundColor = "#fff";
   });
 });
 </script>
 
 <template>
   <main ref="container" class="container">
+    <div ref="cursor" class="custom-cursor"></div>
     <Navbar />
     <Hero />
     <Firebrands
@@ -54,5 +68,18 @@ onMounted(() => {
     var(--bgColor-rbga-primary) 8%,
     var(--bgColor-rbga-secondary) 100%
   );
+  overflow: hidden;
+}
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s;
+  border-radius: 50%;
+  pointer-events: none;
+  background-color: var(--color-primary);
 }
 </style>
