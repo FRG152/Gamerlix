@@ -8,13 +8,14 @@ This project is based on a UI design found on [Pinterest](https://www.pinterest.
 
 ![Web result](https://i.imgur.com/utJaoMi.gif)
 
+![Web Link](elegant-mochi-ee9de2.netlify.app)
+
 ---
 
 ## 🛠️ Recommended IDE Setup
 
 - **IDE**: [Visual Studio Code](https://code.visualstudio.com/)
 - **Extension**: [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.)
-- ❌ Disable Vetur if it's enabled.
 
 ---
 
