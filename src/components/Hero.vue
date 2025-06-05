@@ -10,7 +10,7 @@ const title = ref(null);
 
 onMounted(() => {
   gsap.from(title.value, {
-    opacity: 0.8,
+    opacity: 0,
     duration: 2,
     x: -300,
     ease: "power2.inOut",
