@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "VeniteAdoremus";
+  src: url("../assets/fonts/VeniteAdoremus.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+:root {
+  /* text */
+  --color-primary: #fff;
+  --color-secondary: #252525;
+
+  /* background */
+  --bgColor-primary: #b82e2e;
+  --bgColor-secondary: #e82727;
+
+  --bgColor-rbga-primary: rgb(96 12 12);
+  --bgColor-rbga-secondary: rgba(232, 39, 39, 1);
+
+  /* shadow */
+  --shadow-primary: #00000050;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  background: var(--color-primary);
+  font-family: "VeniteAdoremus", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
