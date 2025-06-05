@@ -12,7 +12,7 @@ onMounted(() => {
   gsap.from(title.value, {
     opacity: 0.8,
     duration: 2,
-    x: -200,
+    x: -300,
     ease: "power2.inOut",
   });
   gsap.from(boxCard.value, {
@@ -31,7 +31,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="container-hero">
+  <section ref="containerHero" class="container-hero">
     <h1 ref="title" class="hero-title">NEXSUS</h1>
     <img ref="image" alt="hero" class="image" src="../../public/image01.png" />
     <div ref="boxCard" class="box-card">

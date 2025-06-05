@@ -3,10 +3,22 @@ import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
 import Firebrands from "./components/Firebrands.vue";
 import { leftFirebrands, rightFirebrands } from "./constants";
+import { ref, onMounted } from "vue";
+import gsap from "gsap";
+
+const container = ref(null);
+
+onMounted(() => {
+  gsap.from(container.value, {
+    duration: 2,
+    transform: "scale(0.8)",
+    opacity: 0,
+  });
+});
 </script>
 
 <template>
-  <main class="container">
+  <main ref="container" class="container">
     <Navbar />
     <Hero />
     <Firebrands
