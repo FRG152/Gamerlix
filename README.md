@@ -1,29 +1,31 @@
-# ./
+# 🎮 Gamerlix
 
-This template should help get you started developing with Vue 3 in Vite.
+**Gamerlix** is a starter template built with **Vue 3 + Vite**, featuring a futuristic, game-inspired UI.
 
-## Recommended IDE Setup
+> ⚠️ **Design Disclaimer**  
+> This project is based on a UI concept found on [Pinterest](https://www.pinterest.com/pin/966655507521697867/).  
+> It is used strictly for educational and non-commercial purposes.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Customize configuration
+## 🌐 Live Preview
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+![Gamerlix Demo](https://i.imgur.com/utJaoMi.gif)
 
-## Project Setup
+👉 [View Live Site](https://elegant-mochi-ee9de2.netlify.app)
 
-```sh
+---
+
+## 🛠️ Recommended Development Setup
+
+- **IDE**: [Visual Studio Code](https://code.visualstudio.com/)
+- **Extension**: [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+
+---
+
+## ⚙️ Project Setup
+
+### Install Dependencies
+
+```bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
