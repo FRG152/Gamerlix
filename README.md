@@ -1,27 +1,31 @@
-# Gamerlix 🎮
+# 🎮 Gamerlix
 
-This project is a starter template for building with **Vue 3 + Vite**, designed with a futuristic, game-inspired aesthetic.
+**Gamerlix** is a starter template built with **Vue 3 + Vite**, featuring a futuristic, game-inspired UI.
 
-> ⚠️ **Design Disclaimer**: The design used in this project was inspired by an image found on Pinterest. It is used solely for educational and non-commercial purposes.
-
-This project is based on a UI design found on [Pinterest](https://www.pinterest.com/pin/966655507521697867/).
-
-![Web result](https://i.imgur.com/utJaoMi.gif)
-
-![Web Link](elegant-mochi-ee9de2.netlify.app)
+> ⚠️ **Design Disclaimer**  
+> This project is based on a UI concept found on [Pinterest](https://www.pinterest.com/pin/966655507521697867/).  
+> It is used strictly for educational and non-commercial purposes.
 
 ---
 
-## 🛠️ Recommended IDE Setup
+## 🌐 Live Preview
+
+![Gamerlix Demo](https://i.imgur.com/utJaoMi.gif)
+
+👉 [View Live Site](https://elegant-mochi-ee9de2.netlify.app)
+
+---
+
+## 🛠️ Recommended Development Setup
 
 - **IDE**: [Visual Studio Code](https://code.visualstudio.com/)
-- **Extension**: [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.)
+- **Extension**: [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 
 ---
 
 ## ⚙️ Project Setup
 
-### Install dependencies
+### Install Dependencies
 
 ```bash
 npm install
