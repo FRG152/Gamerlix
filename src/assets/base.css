@@ -53,11 +53,11 @@ body {
 }
 
 li {
+  cursor: pointer;
   list-style: none;
 }
 
 button {
-  cursor: none;
   border: none;
   outline: none;
   background: none;
